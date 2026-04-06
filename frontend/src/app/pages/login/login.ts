@@ -23,7 +23,6 @@ export class LoginComponent {
     event.preventDefault();
     this.authService.login(this.email, this.password).subscribe({
       next: (response: any) => {
-        debugger
         console.log('Login successful:', response);
         this.router.navigate(['/home']);
       },
