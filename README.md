@@ -22,3 +22,9 @@ cd frontend
 npm i
 npm start
 ```
+
+## Test login API
+```shell
+curl -X POST -H "Content-Type: application/json"  --data '{"email": "user@example.com", "password": "password"}' 
+http://localhost:3000/api/login
+```
